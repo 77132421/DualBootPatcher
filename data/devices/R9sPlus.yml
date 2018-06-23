@@ -1,0 +1,34 @@
+- name: OPPO R9s Plus(China Moilel)
+
+  id: oppor
+
+  codenames:
+    - R9sPlus
+    - OPPO R9s Plus
+    - r9sPlus
+
+  architecture: arm64-v8a
+
+    base_dirs:
+      - /dev/block/platform/soc.0/by-name
+
+    system:
+      - /dev/block/platform/soc.0/by-name/system
+      - /dev/block/mmcblk0p29
+
+    cache:
+      - /dev/block/platform/soc.0/by-name/cache
+      - /dev/block/mmcblk0p28
+
+    data:
+      - /dev/block/platform/soc.0/by-name/userdata
+      - /dev/block/mmcblk0p54
+
+    boot:
+      - /dev/block/platform/soc.0/by-name/boot
+      - /dev/block/mmcblk0p22
+
+    recovery:
+      - /dev/block/platform/soc.0/by-name/recovery
+      - /dev/block/mmcblk0p25
+
